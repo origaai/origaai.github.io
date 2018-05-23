@@ -25,7 +25,6 @@ function() {
     window.addEventListener ? window.addEventListener("scroll", t) : window.attachEvent && window.attachEvent("scroll", t), t();
 
 
-    console.log("HELL YEAH");
     particlesJS("particles-js", {
         "particles": {
             "number": {
