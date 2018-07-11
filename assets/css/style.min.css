@@ -6014,6 +6014,9 @@ a.badge:hover {
     margin-bottom: 30px;
     color: #fff;
     background-color: rgba(28, 57, 93, 0.96);
+    margin-bottom:0;
+    height: 56vh;
+    padding-top: 100px;"
 }
 
 .jumbotron .h1,
@@ -8124,7 +8127,7 @@ a.btn {
     font-weight: 600;
     height: 32px;
     font-size: 26px;
-    /*background: url(/static/img/ta-logo.svg) 0 0 no-repeat;*/
+    /*background: url('../img/logo.svg') 0 0 no-repeat;*/
     /*text-indent: -5000px*/
 }
 
@@ -8266,12 +8269,12 @@ h5 {
     background-size: 100%;
     min-height: 320px;
     padding-top: 80px;
-    margin-bottom: 20px
 }
 
 .jumbotron h1 {
     font-size: 3.375rem;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-top: 10vh;
 }
 
 .jumbotron p {
@@ -8659,8 +8662,11 @@ h5 {
 }
 
 .logo {
-    height: 28px;
-    margin-right: 5px
+    width: 35px;
+    height: 35px;
+    fill: white;
+    float: left;
+    margin: -5px 5px 0 0;
 }
 
 .navbar-cta {
@@ -8980,4 +8986,31 @@ html {
 }
 .design a {
     color: #fff;
+}
+@media (max-width:62rem) {
+    .heading-title {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+    .heading-text {
+        font-size: 1.2rem !important;
+        font-weight: 200 !important;
+    }
+
+    .jumbotron h1 {
+        margin-top: 50px;
+    }
+    .about-heading {
+        font-size: 22px !important;
+    }
+    .home-content-block-1 h3 {
+        font-size: 21px;
+    }
+}
+.about {
+    margin: 0;
+    width: 100%;
+    background: #fafafa;
+    min-height: 60vh;
+    padding-top: 5%;
 }
