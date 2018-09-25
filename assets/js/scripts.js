@@ -147,11 +147,13 @@ function() {
         event.preventDefault();
 
         // Change to your service ID, or keep using the default service
-        var service_id = "default_service";
-        var template_id = "template_QY87AcYu";
+       var service_id = "default_service"; 
+        
+       var template_id = "template_QY87AcYu";  
+        
 
         myform.find("button").text("Sending...");
-        emailjs.sendForm(service_id,template_id,"myform")
+        emailjs.sendForm(service_id,template_id,myform[0])
             .then(function(){
                 swal({
                     title: "Thank you",
@@ -159,6 +161,7 @@ function() {
                     icon: "success",
                 });
                 myform.find("button").text("Send");
+                $("#from_name").text("");
                 $("#message_html").text("");
             }, function(err) {
                 swal({

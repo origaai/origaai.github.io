@@ -4,19 +4,28 @@ form {
   margin: auto;
   margin-top: 30px;
 }
+
+.message_html{
+  padding: 5px 5px;
+  width: 65%;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+.description{
+padding: 1px 3px;
+width:95.5%;
+margin-bottom: 2px;
+}
 form input,
 form textarea {
   font: inherit;
-  padding: 5px 5px;
-  width: 65%;
-  margin-top: 3px;
-  margin-bottom: 15px;
   box-sizing: border-box;
   font-family: 'Source Sans Pro';
 }
+
 form button {
   border: 1px solid transparent;
-  padding: 8px 15px;
+  padding: 7px 15px;
   font-size: 12px;
   background: #3D9E39;
   color: white;

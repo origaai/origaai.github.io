@@ -65,10 +65,12 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
                     <form id="myform" method="post">
-                        <input type="text" name="message_html" id="message_html" placeholder="Your email or phone number"/>
+                        <input type="text" class="message_html" name="from_name" id="from_name" placeholder="Your email or phone number"/>
                         <button>
                             CONTACT US
                         </button>
+                        
+                        <input type="text" class="description" name="message_html" id="message_html" placeholder="Writing your message here" required/>
                     </form>
                 </div>
             </div>
@@ -165,7 +167,7 @@
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init("user_CiKcpg13e2MfN3cHUXKCp");
+        emailjs.init("user_CiKcpg13e2MfN3cHUXKCp");    
     })();
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
